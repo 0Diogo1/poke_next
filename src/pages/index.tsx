@@ -10,10 +10,10 @@ export interface Pokemon{
 }
 
 export async function getStaticProps(){
-  const maxPokemons = 250
+  const maxPokemons = 251
   const api = "https://pokeapi.co/api/v2/"
 
-  const res = await fetch(`${api}/pokemon?limit=${maxPokemons}&offset=100`)
+  const res = await fetch(`${api}/pokemon?limit=${maxPokemons}`)
 
   const data = await res.json()
 
@@ -24,16 +24,15 @@ export async function getStaticProps(){
     item.id = index + 1;
   })
   
-
+  
   return{
     props:{
       pokemons: data.results
     },
   }
-    
+  
 
 }
-
 export default function Home({pokemons}: {pokemons:Pokemon[]}){
   return(
     <>
@@ -41,7 +40,7 @@ export default function Home({pokemons}: {pokemons:Pokemon[]}){
         <h1 className='text-4xl font-bold text-stone-900'>Poke<span className='text-red-700'>Next</span></h1>
         <Image src={Pokebola} width={60} height={60} alt="Imagem de uma pokebola"/>
        </div>
-      <div className='flex flex-wrap justify-between items-center max-w-4xl m-auto mt-7'>
+      <div className='flex flex-wrap justify-between items-center max-w-5xl m-auto mt-7'>
         {pokemons.map((pokemon:any) => (
           <Card key={pokemon.id} pokemon={pokemon}/>
         ))}
