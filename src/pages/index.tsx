@@ -1,15 +1,16 @@
 import Pokebola from '../../public/images/pokeball.png'
 import Image from "next/image"
 import { Inter } from "next/font/google";
+import Card from '@/components/Card';
 
-interface Pokemon{
+export interface Pokemon{
   name:string,
   url:string,
   id:number
 }
 
 export async function getStaticProps(){
-  const maxPokemons = 1302
+  const maxPokemons = 250
   const api = "https://pokeapi.co/api/v2/"
 
   const res = await fetch(`${api}/pokemon?limit=${maxPokemons}&offset=100`)
@@ -42,7 +43,7 @@ export default function Home({pokemons}: {pokemons:Pokemon[]}){
        </div>
       <div className='flex flex-wrap justify-between items-center max-w-4xl m-auto mt-7'>
         {pokemons.map((pokemon:any) => (
-          <p key={pokemon.id}>{pokemon.name}</p>
+          <Card key={pokemon.id} pokemon={pokemon}/>
         ))}
       </div>
     </>
