@@ -1,7 +1,7 @@
 Este é um projeto feito em Next.js com o intuito de solidificar alguns conceitos deste framework.
 Para visualizar o proejto em produção, basta clicar no link abaixo.
 
-(https://pokenext-psi-self.vercel.app/)
+[Visitar site](https://pokenext-psi-self.vercel.app/)
 
 ## Getting Started
 
