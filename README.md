@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este é um projeto feito em Next.js com o intuito de solidificar alguns conceitos deste framework.
+Para visualizar o proejto em produção, basta clicar no link abaixo.
 
 (https://pokenext-psi-self.vercel.app/)
 
@@ -15,8 +16,6 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
