@@ -34,7 +34,7 @@ export const getStaticPaths = async () => {
 export default function Pokemon({pokemon}:any){
     console.log(pokemon)
     return(
-        <div className='flex border-2 items-center justify-around mt-20 max-w-xl m-auto p-6 rounded-md bg-stone-800 shadow-stone-800 shadow-md border-red-600 text-white'>
+        <div className={`flex border-2 items-center justify-around  max-w-xl m-auto p-6 rounded-md bg-stone-800 shadow-stone-800 shadow-md border-red-600 text-white ${Styles.card_position}`}>
             <div className="">
                 <h1 className="text-center bg-stone-200 text-stone-700 rounded capitalize p-1 font-semibold">{pokemon.name}</h1>
                 <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} 

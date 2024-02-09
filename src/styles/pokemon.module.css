@@ -79,3 +79,24 @@
   .type_fairy {
     background-color: #e9e;
   }
+
+ 
+.card_position{
+  margin-top: 9em;
+}
+.card_type_position{
+  margin-left:0.4em;
+  margin-right:0.4em;
+}
+
+@media (min-width: 768px){
+  .card_position{
+    margin-top:1.4em;
+  }
+}
+
+@media (min-width:769px){
+  .card_position{
+    margin-top: 9.4em;
+  }
+}
