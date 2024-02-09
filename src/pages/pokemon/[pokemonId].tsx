@@ -32,7 +32,6 @@ export const getStaticPaths = async () => {
     }
 
 export default function Pokemon({pokemon}:any){
-    console.log(pokemon)
     return(
         <div className={`flex border-2 items-center justify-around  max-w-xl m-auto p-6 rounded-md bg-stone-800 shadow-stone-800 shadow-md border-red-600 text-white ${Styles.card_position}`}>
             <div className="">

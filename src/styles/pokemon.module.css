@@ -80,25 +80,29 @@
     background-color: #e9e;
   }
 
-@media (max-width:400px){
+@media (max-width:624px){
   .card_position{
-    margin-top: 9em;
+    display:flex;
+    flex-direction: column;
+    max-width:fit-content;
+    margin-top:3em;
   }
 }
 
-@media (min-width:401px) and (max-width:625px){
+@media (min-width:625px) and (max-width:768px){
   .card_position{
     margin-top:1.4em;
   }
 }
 
-@media (min-width:626px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1024px){
   .card_position{
     margin-top: 1.4em;
   }
 }
+
 @media (min-width:1025px){
   .card_position{
     margin-top: 5em;
   }
-}
+} 
