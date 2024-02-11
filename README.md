@@ -1,9 +1,8 @@
 ##PokeNext
 
-Este é um projeto feito em Next.js com o intuito de solidificar alguns conceitos deste framework.
-Para visualizar o projeto em produção, basta clicar no link abaixo.
+Aplicando conceitos de pré-renderização do Next.js e trabalhando com arquitetura de pages para as rotas dinâmicas.
 
-[Visitar site](https://pokenext-psi-self.vercel.app/)
+###[Link do site](https://pokenext-psi-self.vercel.app/)
 
 
 ## Getting Started
