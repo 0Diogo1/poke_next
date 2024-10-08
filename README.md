@@ -2,7 +2,7 @@
 
 Aplicando conceitos de pré-renderização do Next.js e trabalhando com arquitetura de pages para as rotas dinâmicas.
 
-[##Link do site##](pokenext-mpr48s0zl-diogos-projects-fc832e60.vercel.app)
+[##Link do site##](https://pokenext-mpr48s0zl-diogos-projects-fc832e60.vercel.app)
 
 
 ## Getting Started
